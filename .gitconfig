@@ -1,0 +1,29 @@
+[user]
+	name = Mike Padgett
+	email = marketreactor@gmail.com
+[core]
+	editor = vi
+	excludesfile = ~/.gitignore
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[web]
+	browser = google-chrome
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[credential]
+	helper = osxkeychain
+[push]
+	default = simple
+[alias]
+	logg = log --graph --oneline --all --decorate
+	c = commit
+	ca = commit -a
+	cm = commit -m
+	cam = commit -am
+	d = diff
+	dc = diff --cached
