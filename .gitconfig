@@ -1,6 +1,6 @@
 [user]
 	name = Mike Padgett
-	email = marketreactor@gmail.com
+	email = mike@marketreactor.com
 [core]
 	editor = vi
 	excludesfile = ~/.gitignore
