@@ -18,6 +18,7 @@ alias key="cd ~/.ssh"
 # Personal ~~~~~~~~~
 alias a="cd ~/Atom"
 alias dots="cd ~/Atom/OSX/dotFiles/"
+alias c="cd " $1
 # ~~~~~~~~~~~~~~~~~~
 alias g="git"
 alias h="history"
