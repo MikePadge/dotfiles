@@ -15,7 +15,10 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias ap="cd ~/Applications"
 alias key="cd ~/.ssh"
+# Personal ~~~~~~~~~
 alias a="cd ~/Atom"
+alias dots="cd ~/Atom/OSX/dotFiles/"
+# ~~~~~~~~~~~~~~~~~~
 alias g="git"
 alias h="history"
 
@@ -94,6 +97,8 @@ alias vag="vagrant"
 alias og="open -a 'Google Chrome'"
 # Human Readable Filesize Information for current directory
 alias du="du -h"
+# List listenening ports
+alias lsp="sudo lsof -i -n -P | grep LISTEN"
 
 # Can't the fuck remember tar -xzvf or whatever the hell? Good, just type extract(<filename>) and hit enter, and this will rectumfy it. 
 extract () {
