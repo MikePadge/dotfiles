@@ -3,7 +3,8 @@
 #@author Mike Padgett
 #
 #@see .inputrc
-#
+#@see .bashrc for env variables
+#@see .aliases for custom commands
 
 # set irc proxy via one of however many servers
 # set bastion proxy if not on trusted network

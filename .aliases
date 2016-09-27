@@ -33,7 +33,7 @@ fi
 # Differentiate Directories from Files with 'ls' command colorized now
 alias ls='CLICOLOR_FORCE=1 ls -GF'
 # All Seeing List Eye
-alias l='ls -FGlAhp'
+alias l='ls -FGlAhtp'
 
 #Figure out what fgrep and egrep are useful for, until then, just color grep
 alias grep='grep -i --color=auto'
@@ -100,6 +100,7 @@ alias og="open -a 'Google Chrome'"
 alias du="du -h"
 # List listenening ports
 alias lsp="sudo lsof -i -n -P | grep LISTEN"
+alias ip="curl icanhazip.com"
 
 # Can't the fuck remember tar -xzvf or whatever the hell? Good, just type extract(<filename>) and hit enter, and this will rectumfy it. 
 extract () {
