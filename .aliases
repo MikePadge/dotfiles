@@ -33,6 +33,7 @@ fi
 # Differentiate Directories from Files with 'ls' command colorized now
 alias ls='CLICOLOR_FORCE=1 ls -GF'
 # All Seeing List Eye
+alias ll='ls -FGlAhtp'
 alias l='ls -FGlAhtp'
 
 #Figure out what fgrep and egrep are useful for, until then, just color grep
