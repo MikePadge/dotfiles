@@ -19,6 +19,7 @@ alias key="cd ~/.ssh"
 alias a="cd ~/Atom"
 alias dots="cd ~/Atom/OSX/dotFiles/"
 alias c="cd " $1
+alias sites="cd ~/Atom/Sites"
 # ~~~~~~~~~~~~~~~~~~
 alias g="git"
 alias h="history"
@@ -33,7 +34,7 @@ fi
 # Differentiate Directories from Files with 'ls' command colorized now
 alias ls='CLICOLOR_FORCE=1 ls -GF'
 # All Seeing List Eye
-alias ll='ls -FGlAhtp'
+alias ll='ls -FGlhtp'
 alias l='ls -FGlAhtp'
 
 #Figure out what fgrep and egrep are useful for, until then, just color grep
@@ -91,6 +92,8 @@ alias shell="exec $SHELL -l"
 #********UTILITIES
 #**************************
 
+# tree laze
+alias t="tree"
 alias cp="cp -iv"
 alias mv="mv -iv"
 # Vagrant Shortcut
