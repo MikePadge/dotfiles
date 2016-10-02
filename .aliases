@@ -17,12 +17,12 @@ alias ap="cd ~/Applications"
 alias key="cd ~/.ssh"
 # Personal ~~~~~~~~~
 # Can i use varialbe here for Atom?
-alias a="cd ~/Atom"
-alias dots="cd ~/*/OSX/dotFiles/"
+alias a="cd ~/Documents/Atom"
+alias dots="cd ~/Documents/*/OSX/dotFiles/"
 alias c="cd " $1
-alias sites="cd ~/*/Sites"
-alias osx="cd ~/*/osx"
-alias ansi="cd ~/*/Ansible"
+alias sites="cd ~/Documents/*/Sites"
+alias osx="cd ~/Documents/*/osx"
+alias ansi="cd ~/Documents/*/Ansible"
 # ~~~~~~~~~~~~~~~~~~
 alias g="git"
 alias h="history"
