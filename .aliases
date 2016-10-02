@@ -16,10 +16,13 @@ alias dt="cd ~/Desktop"
 alias ap="cd ~/Applications"
 alias key="cd ~/.ssh"
 # Personal ~~~~~~~~~
+# Can i use varialbe here for Atom?
 alias a="cd ~/Atom"
-alias dots="cd ~/Atom/OSX/dotFiles/"
+alias dots="cd ~/*/OSX/dotFiles/"
 alias c="cd " $1
-alias sites="cd ~/Atom/Sites"
+alias sites="cd ~/*/Sites"
+alias osx="cd ~/*/osx"
+alias ansi="cd ~/*/Ansible"
 # ~~~~~~~~~~~~~~~~~~
 alias g="git"
 alias h="history"
@@ -105,8 +108,10 @@ alias du="du -h"
 # List listenening ports
 alias lsp="sudo lsof -i -n -P | grep LISTEN"
 alias ip="curl icanhazip.com"
+# This requires a brew install brew cask install switchaudio-osx
+alias snd="SwitchAudioSource -a"
 
-# Can't the fuck remember tar -xzvf or whatever the hell? Good, just type extract(<filename>) and hit enter, and this will rectumfy it. 
+# Can't the fuck remember tar -xzvf or whatever the hell? Good, just type extract(<filename>) withouth the <> and hit enter, and this will rectumfy it. 
 extract () {
 	if [ -f $1 ] ; then
   	case $1 in
