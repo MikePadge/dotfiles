@@ -61,6 +61,9 @@ nmap <leader>q :cq<cr>
 " Exit insert mode via 'jj'
 imap ;j <esc>
 
+" QuickSave exit ,x
+nmap <leader>x :x<cr>
+
 " Ctrl-n for NERDTree
 " Ctrl-ww to switch between NERDTree and panes
 nmap <leader>nt :NERDTree<cr>

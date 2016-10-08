@@ -46,7 +46,7 @@ fi
 
 alias ls='CLICOLOR_FORCE=1 ls -GF'
 # All Seeing List Eye
-alias ll='ls -FGLlAhp'
+alias ll='ls -FGllAhp'
 alias l='ls -FGLlhp'
 alias lS='ls -FGlAhtpS'
 alias lm='ls -FGlAhtp'
