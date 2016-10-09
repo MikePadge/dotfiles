@@ -53,6 +53,13 @@ let g:mapleader = ","
 " Save via ',w'
 nmap <leader>w :w!<cr>
 nmap <leader>q :cq<cr>
+" QuickSave exit ,x
+nmap <leader>x :x<cr>
+
+" 
+nmap <leader>p :set paste<cr>
+nmap <leader>n :noh<cr>
+nmap <leader>pp :set nopaste<cr>
 
 " Run phpunit via ',t'
 "map <Leader>t :!phpunit %<cr>
@@ -61,12 +68,9 @@ nmap <leader>q :cq<cr>
 " Exit insert mode via 'jj'
 imap ;j <esc>
 
-" QuickSave exit ,x
-nmap <leader>x :x<cr>
-
 " Ctrl-n for NERDTree
 " Ctrl-ww to switch between NERDTree and panes
-nmap <leader>nt :NERDTree<cr>
+nmap <leader>t :NERDTree<cr>
 
 " CtrlP to open CtrlP
 " Ctrl-T to open highlighted file in new tab
@@ -106,3 +110,8 @@ set autoindent
 set wrap
 set linebreak
 set nolist
+
+" test section
+
+" attempts to turn off automatic comments
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
