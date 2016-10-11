@@ -113,6 +113,10 @@ alias cp="cp -iv"
 alias mv="mv -iv"
 # Vagrant Shortcut
 alias vag="vagrant"
+# Vagrant List Machines
+alias vgs="vagrant global-status"
+# Vagrant Destroy $1 -f
+alias vd="vagrant destroy " $1
 # Open Chrome
 alias og="open -a 'Google Chrome'"
 # Human Readable Filesize Information for current directory
