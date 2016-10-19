@@ -74,6 +74,13 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 # (e.g. enable Tab in modal dialogs - 0 = text boxes and lists, 2/3 = all controls)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 0
 
+# Disable press and hold keys for key repeat
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+
+# Nitro Repeat Rate
+defaults write NSGlobalDomain InitialKeyRepeat -int 20
+defaults write NSGlobalDomain KeyRepeat -int 1
+
 ##########################################
 # Scroll
 ##########################################
@@ -126,12 +133,21 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # Disable Dashboard
 defaults write com.apple.dashboard mcx-disabled -bool true
 
+# Disable applications re-opening on reboot - note: option persists, but does not work
+defaults write -g ApplePersistence -bool no
+
 ###################################################################
 # System
 ###################################################################
 
 # Disable local Time Machine backups
 hash tmutil &> /dev/null && sudo tmutil disablelocal
+
+# Disable Chrome on System startup
+osascript -e 'tell application "System Events" to delete login item "Google Chrome"' 
+
+# Disable iTunes Bullshit on startup
+osascript -e 'tell application "System Events" to delete login item "iTunesHelper"' 
 
 ###################################################################
 # Terminal
@@ -158,9 +174,4 @@ defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
 # Use system print dialog
 defaults write.google.Chrome DisablePrintPreview -bool true
 
-###################################################################
-# Annoying Shit
-###################################################################
 
-# Disable applications re-opening on reboot - note: option persists, but does not work
-defaults write -g ApplePersistence -bool no
