@@ -158,4 +158,9 @@ defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
 # Use system print dialog
 defaults write.google.Chrome DisablePrintPreview -bool true
 
+###################################################################
+# Annoying Shit
+###################################################################
 
+# Disable applications re-opening on reboot - note: option persists, but does not work
+defaults write -g ApplePersistence -bool no
