@@ -26,3 +26,17 @@ export BLOCKSIZE=1k
 export PATH=/usr/local/bin:$PATH
 export EDITOR=vim
 export LSCOLORS=gxfxcxdxbxegedabagacad
+
+#exec ssh-agent $BASH -s 10<&0 << EOF
+#    ssh-add ~/.ssh/mike &> /dev/null
+#    exec $BASH <&10-
+#EOF
+
+if [[ -s $HOME/.rvm/scripts/rvm ]]; then
+	  source $HOME/.rvm/scripts/rvm;
+fi
+
+alias ns="~/Documents/Bin/newSite.sh"
+	
+source ~/.profile
+

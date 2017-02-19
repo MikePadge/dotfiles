@@ -20,7 +20,17 @@ alias key="cd ~/.ssh"
 alias a="cd ~/Documents/Atom"
 alias dots="cd ~/Documents/*/OSX/dotFiles/"
 alias c="cd " $1
+#============================================
+# SITES
+#============================================
 alias sites="cd ~/Documents/*/Sites"
+alias ynt="cd ~/Documents/*/Sites/YourNewToys/Trellis"
+alias nice="cd ~/Documents/*/Sites/Nice/Trellis"
+alias mr="cd ~/Documents/*/Sites/MarketReactor"
+alias pcclt="cd ~/Documents/*/Sites/PCCLT/Trellis"
+alias spray="cd ~/Documents/*/Sites/SprayStorm/Trellis"
+alias pp="cd ~/Documents/*/Sites/Spray/Trellis"
+
 alias osx="cd ~/Documents/*/osx"
 alias ansi="cd ~/Documents/*/Ansible"
 # ~~~~~~~~~~~~~~~~~~
@@ -67,7 +77,7 @@ alias week='date +%V'
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup; npm install npm -g; npm update -g;'
 
 # Flush Directory Service cache
-alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
+alias flush="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder;say flushed"
 
 # Recursively delete '.DS_Store' files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
@@ -148,4 +158,5 @@ extract () {
       echo "'$1' is not a valid file"
   fi
 }
+
 

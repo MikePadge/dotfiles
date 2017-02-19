@@ -53,6 +53,7 @@ let g:mapleader = ","
 " Save via ',w'
 nmap <leader>w :w!<cr>
 nmap <leader>q :cq<cr>
+vmap <leader>, :w !pbcopy<cr><cr>
 " QuickSave exit ,x
 nmap <leader>x :x<cr>
 
