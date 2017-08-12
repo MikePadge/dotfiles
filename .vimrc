@@ -36,10 +36,10 @@ syntax enable
 set background=dark
 
 " Yep, spaces
-set smartindent
+" set smartindent
 set tabstop=2
 set shiftwidth=2
-"set expandtab
+set expandtab
 
 " No error noise on
 " bad key-strokes, etc
@@ -61,6 +61,14 @@ nmap <leader>x :x<cr>
 nmap <leader>p :set paste<cr>
 nmap <leader>n :noh<cr>
 nmap <leader>pp :set nopaste<cr>
+nnoremap <leader>j <c-w>h<cr>
+nnoremap <leader>k <c-w>l<cr>
+nnoremap <leader>c <c-w>c<cr>
+nnoremap <leader>l <c-w>j<cr>
+nnoremap <leader>h <c-w>k<cr>
+nnoremap <leader>d <c-d><cr>
+nnoremap <leader>u <c-u><cr>
+
 
 " Run phpunit via ',t'
 "map <Leader>t :!phpunit %<cr>
@@ -90,6 +98,9 @@ autocmd BufWritePre *.php :%s/\s\+$//e
 " Open composer.json file easily
 " within a new tab via ',lc'
 nmap <leader>lc :tabe composer.json<cr>
+
+" Quick Ruby Run
+nmap <leader>r :! clear; ruby %<CR>
 
 " Remove folding of markdown
 " as per https://github.com/plasticboy/vim-markdown
